@@ -16,8 +16,9 @@ Debian:
     client:
       url: https://bintray.com/artifact/download/seafile-org/seafile/seafile_5.1.3_amd64.deb
     server:
-      use_systemd: False
+      use_systemd: True
       dependencies:
+        - curl
         - python-setuptools
         - python-ldap
         - python-imaging
